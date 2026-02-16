@@ -23,6 +23,10 @@ header, section, footer{
     text-align: justify;
 }
 
+.lorem.dois{
+    width: 70%;
+}
+
 body{
     margin: 0rem;
 }
@@ -41,7 +45,7 @@ h1{
 
 .icon{
     width: 1.5rem;
-     height: 1.5rem;
+    height: 1.5rem;
 }
 
 .iconcontainer{
@@ -76,6 +80,10 @@ ul{
     padding: 0;
 }
 
+li{
+    list-style: none;
+}
+
 button{
     background-color: white;
     border: solid rgb(110, 185, 127);
@@ -90,4 +98,54 @@ footer{
     color: azure;
     margin-top: 2rem;
     padding-block: 1rem;
+}
+
+@media (min-width: 700px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    /* section 3 */
+
+    ul, li{
+        text-align: left;
+    }
+
+    .three{
+        display: flex;
+        align-items: start;
+        margin-left: 4rem;
+        width: 33.33%;
+        padding-left: 2rem;
+    }
+
+    /* section 2 */
+
+    .lorem.dois{
+        text-align: left;
+        margin: 0rem;
+    }
+
+    .two{
+        align-items: flex-start;
+        margin: 0rem;
+        width: 33.33%;
+        padding-left: 2rem;
+        
+    }
+
+    button{
+        margin-top: 1.5rem;
+    }
+
+    /* section  1 */
+
+    .relative{
+        left: 0;
+        top: -4rem;
+        margin-right: 4rem;
+        width: 33.33%;
+    }
 }
