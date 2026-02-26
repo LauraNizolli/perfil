@@ -101,6 +101,10 @@ footer{
 }
 
 @media (min-width: 700px){
+    header{
+        margin: 3rem;
+    }
+    
     main{
         display: flex;
         flex-direction: row-reverse;
@@ -147,5 +151,11 @@ footer{
         top: -4rem;
         margin-right: 4rem;
         width: 33.33%;
+    }
+
+    footer{
+        position: fixed;
+        bottom:0;
+        width: 100%;
     }
 }
